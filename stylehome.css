@@ -1,0 +1,96 @@
+#front{
+    background-color: cyan;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-height: 140px;
+    max-width: 140px;
+}
+#mythought{
+    background-color: coral;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 30px;
+}
+#riki{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 90px;
+}
+#rikiintro{
+    background-color: blueviolet;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-right: 90px;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    color: white;
+}
+#team{
+    color: chartreuse;
+    text-align: center;
+}
+#teamname{
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: 100;
+}
+table{
+    width: 1150px;
+    margin-left: 50px;
+}
+#teampicture{
+    border-radius: 50%;
+}
+#mytital{
+    color: crimson;
+    text-align: center;
+    background-color: darkgray;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+#myintro{
+    color: aqua;
+    background-color: darkmagenta;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+#startend{
+    color: coral;
+}
+#biopic{
+    max-height: 800px;
+    max-width: 150px;
+    border-radius: 10px;
+}

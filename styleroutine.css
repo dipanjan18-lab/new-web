@@ -1,0 +1,27 @@
+body{
+    background-color: bisque;
+}
+#title{
+    background-color: violet;
+    text-align: center;
+    color: whitesmoke;
+}
+#day{
+    background-color: aqua;
+    color: brown;
+    text-shadow: 20px;
+}
+table{
+    background-color: aquamarine;
+    height: 500px;
+    width: 700px;
+    text-align: center;
+    margin-right: 590px;
+}
+#caption1{
+    background-color: yellow;
+    width: 1000px;
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

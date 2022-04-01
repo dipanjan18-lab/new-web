@@ -1,0 +1,27 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    background-color: yellow;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 900px;
+    border-radius: 40%;
+}
+h2{
+    background-color: black;
+    color: green;
+    margin-bottom: -1px;
+}
+table{
+    margin-left: 150px;
+    height: 550px;
+    width: 700px;
+    border-color: red;
+    background-color: skyblue;
+}

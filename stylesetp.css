@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/pic1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#previous{
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    top: 26%;
+    left: 46%;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+h3{
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+}
+#home{
+    background-color: #ffc107;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+}
