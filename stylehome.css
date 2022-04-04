@@ -54,11 +54,6 @@ img{
     text-align: center;
 }
 #teamname{
-    font-weight: bolder;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
     text-align: center;
     color: cornflowerblue;
     font-weight: 100;
