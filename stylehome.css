@@ -28,8 +28,8 @@ img{
     padding-bottom: 5px;
     padding-top: 5px;
     padding-right: 30px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
 }
 #riki{
@@ -37,14 +37,15 @@ img{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #rikiintro{
     background-color: blueviolet;
     font-family: cursive;
     font-weight: bold;
-    margin-left: 150px;
-    margin-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -74,8 +75,8 @@ table{
     text-align: center;
     background-color: darkgray;
     border-radius: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #myintro{
     color: aqua;
