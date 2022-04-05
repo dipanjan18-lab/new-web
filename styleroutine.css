@@ -17,8 +17,8 @@ table{
     height: 500px;
     width: 700px;
     text-align: center;
-    margin-left: 150px;
-/*     margin-right: 590px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 #caption1{
     background-color: yellow;
