@@ -61,6 +61,8 @@ img{
 table{
     width: 1150px;
     margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #teampicture{
     border-radius: 50%;
@@ -79,8 +81,8 @@ table{
     border-radius: 30px;
     font-size: 20px;
     font-family: cursive;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 25px;
