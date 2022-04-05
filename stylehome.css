@@ -9,8 +9,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 body{
     background-color: black;
@@ -28,8 +26,8 @@ img{
     padding-bottom: 5px;
     padding-top: 5px;
     padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 90px;
+    margin-right: 90px;
     font-size: 30px;
 }
 #riki{
@@ -37,15 +35,14 @@ img{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 90px;
 }
 #rikiintro{
     background-color: blueviolet;
     font-family: cursive;
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 150px;
+    margin-right: 90px;
     padding-left: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -63,7 +60,6 @@ img{
 }
 table{
     width: 1150px;
-    margin-left: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -75,8 +71,8 @@ table{
     text-align: center;
     background-color: darkgray;
     border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 #myintro{
     color: aqua;
@@ -84,8 +80,8 @@ table{
     border-radius: 30px;
     font-size: 20px;
     font-family: cursive;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 25px;
