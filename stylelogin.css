@@ -1,13 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    /* filter: invert(100%) */
-    /* background-position: cover; */
-    /* font-family: sans-serif; */
+    background-position: cover;
 }
 
 .loginbox{
@@ -90,7 +88,7 @@ h1{
     color: #ffc107;
 }
 #home{
-    background-color: #ffc107;
+    background-color: red;
     border-radius: 10px;
     font-size: 30px;
     text-decoration: none;
