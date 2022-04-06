@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+}
+body h1 {
+    padding-top: 10px;
+    color: darkcyan;
+    text-align: center;
+    font-size: 80px;
+}
+#main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#colgnamepic{
+    background-color: bisque;
+    list-style: none;
+    display: flex;
+    /* padding-left: 100px; */
+    justify-content: space-evenly;
+}
+#colgpic{
+    max-width: 700px;
+    max-height: 300px;
+}
+body header p {
+    color: chartreuse;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+body div p{
+    color: brown;
+    background-color: cadetblue;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 40px;
+    font-weight: bold;
+}
+body div h1 {
+    color: darkorange;
+    text-align: center;
+}
+body div ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+body div table {
+    background-color: rgb(34, 33, 33);
+    height: 300px;
+    width: 1100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body div table tr th img {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+}
+#proname{
+    color: blueviolet;
+    font-size: 25px;
+}
+#prodegree{
+    color: crimson;
+    font-size: 15px;
+}
