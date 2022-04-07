@@ -10,6 +10,10 @@
     padding-bottom: 5px;
     padding-right: 30px;
 }
+.homeavatar{
+    max-height: 40px;
+    max-width: 40px;
+}
 body{
     background-color: black;
 }
