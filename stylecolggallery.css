@@ -6,9 +6,12 @@ body h1{
     text-align: center;
     font-size: 50px;
 }
-
-table{
-    text-align: center;
+ul{
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 .landscapeimg{
     max-width: 500px;
@@ -17,8 +20,4 @@ table{
 .normalimg{
     max-width: 200px;
     max-height: 300px;
-}
-.firstrow{
-    margin-left: 140px;
-    margin-right: auto;
 }
