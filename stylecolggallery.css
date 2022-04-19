@@ -1,18 +1,3 @@
-#list{
-    background-color: cyan;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 30px;
-}
-a{
-    text-decoration: none;
-}
 body{
     background-color: black;
 }
@@ -20,4 +5,19 @@ body h1{
     color: brown;
     text-align: center;
     font-size: 50px;
+}
+table{
+    text-align: center;
+}
+.landscapeimg{
+    max-width: 500px;
+    max-height: 250px;
+}
+.normalimg{
+    max-width: 200px;
+    max-height: 300px;
+}
+.firstrow{
+    margin-left: 140px;
+    margin-right: auto;
 }
