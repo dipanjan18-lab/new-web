@@ -1,0 +1,58 @@
+a{
+    text-decoration: none;
+}
+a:hover
+{
+    color: darkred;
+}
+#front{
+    background-color: cyan;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+}
+header{
+    margin: auto;
+    background-color: aquamarine;
+}
+footer{
+    padding-top: 50px;
+    margin: auto;
+    background-color: bisque;
+}
+.logo-shop-poster{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#unorder-list{
+    list-style: none;
+}
+table{
+    text-align: center;
+}
+button {
+    background-color: gold;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: cursive;
+  }
