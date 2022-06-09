@@ -12,6 +12,10 @@
     padding-right: 30px;
     margin: auto;
 }
+header{
+    margin: auto;
+    background-color: black;
+}
 .homeavatar{
     padding-top: 5px;
     max-height: 25px;
