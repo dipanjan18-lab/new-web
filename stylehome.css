@@ -110,3 +110,19 @@ table{
     max-width: 150px;
     border-radius: 10px;
 }
+div{
+    /* background-color: cornflowerblue; */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#market:hover
+{
+    /* cursor: pointer; */
+    color: #ffc107;
+    background: #000;
+}
