@@ -17,10 +17,17 @@ ul{
     text-decoration: none;
 }
 audio{
-    height: 80px;
+    height: 70px;
     width: 500px;
 }
 img{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
+}
+audio::-webkit-media-controls-timeline {
+    height: 3px;
+    transform: scale(1, 1.5);
+}
+audio::-webkit-media-controls-play-button{
+    transform: scale(2.5,2.5);
 }
