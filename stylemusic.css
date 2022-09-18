@@ -1,5 +1,7 @@
 body{
     background-color: rgb(165, 42, 157);
+    margin-left: auto;
+    margin-right: auto;
 }
 table{
     text-align: center;
