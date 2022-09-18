@@ -16,3 +16,11 @@ ul{
     list-style: none;
     text-decoration: none;
 }
+audio{
+    height: 80px;
+    width: 500px;
+}
+img{
+    height: 350px;
+    width: 350px;
+}
