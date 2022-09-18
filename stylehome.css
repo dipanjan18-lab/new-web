@@ -74,6 +74,7 @@ img{
     font-weight: 100;
 }
 table{
+    text-align: center;
     width: 1150px;
     margin-left: auto;
     margin-right: auto;
@@ -86,8 +87,8 @@ table{
     text-align: center;
     background-color: darkgray;
     border-radius: 50px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #myintro{
     color: aqua;
@@ -120,9 +121,19 @@ div{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#market:hover
+#music:hover
 {
     /* cursor: pointer; */
     color: #ffc107;
     background: #000;
+}
+#musictable{
+    margin-left: auto;
+    margin-right: auto;
+}
+#lefttd{
+    text-align: right;
+}
+#righttd{
+    text-align: left;
 }
