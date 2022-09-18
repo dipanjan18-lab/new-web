@@ -15,10 +15,11 @@ div{
 ul{
     list-style: none;
     text-decoration: none;
+    margin: auto;
 }
 audio{
     height: 70px;
-    width: 500px;
+    width: 400px;
 }
 img{
     height: 450px;
