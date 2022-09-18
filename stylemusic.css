@@ -3,8 +3,16 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-table{
+/* table{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+} */
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
 }
