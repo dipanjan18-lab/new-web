@@ -11,6 +11,9 @@
     padding-right: 30px;
     flex-wrap: wrap;
 }
+body{
+    background-color: black;
+}
 header{
     margin: auto;
     background-color: black;
@@ -19,9 +22,6 @@ header{
     padding-top: 5px;
     max-height: 25px;
     max-width: 25px;
-}
-body{
-    background-color: black;
 }
 a{
     text-decoration: none;
@@ -36,9 +36,8 @@ img{
     padding-bottom: 5px;
     padding-top: 5px;
     padding-right: 30px;
-    margin: auto;
-/*     margin-left: 90px; */
-/*     margin-right: 90px; */
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
 }
 
@@ -73,8 +72,7 @@ img{
 table{
     text-align: center;
     width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 #teampicture{
     border-radius: 50%;
@@ -110,10 +108,7 @@ table{
 }
 div{
     /* background-color: cornflowerblue; */
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -130,6 +125,7 @@ div{
 }
 #lefttd{
     text-align: right;
+    font-size: 25px;
 }
 #righttd{
     text-align: left;
