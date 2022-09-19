@@ -18,6 +18,9 @@ a:hover
     padding-right: 30px;
     flex-wrap: wrap;
 }
+body{
+    background-color: black:
+}
 header{
     margin: auto;
     background-color: aquamarine;
