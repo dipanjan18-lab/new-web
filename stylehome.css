@@ -5,12 +5,11 @@
     font-weight: bolder;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 70px;
-    margin: auto;
+    padding-right: 30px;
+    flex-wrap: wrap;
 }
 header{
     margin: auto;
@@ -23,8 +22,6 @@ header{
 }
 body{
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
 }
 a{
     text-decoration: none;
