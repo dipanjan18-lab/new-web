@@ -18,13 +18,13 @@ header{
     margin: auto;
     background-color: black;
 }
-.homeavatar{
-    padding-top: 5px;
-    max-height: 25px;
-    max-width: 25px;
-}
 a{
     text-decoration: none;
+}
+footer{
+    padding-top: 50px;
+    margin: auto;
+    background-color: black;
 }
 img{
     max-height: 140px;
@@ -146,5 +146,5 @@ iframe{
     display: flex;
     position: relative; 
     overflow: auto; 
-    padding-top: 53.26%;
+    padding-top: 53.25%;
 }
