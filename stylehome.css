@@ -16,15 +16,19 @@ body{
 }
 header{
     margin: auto;
-    background-color: black;
+    background-color: rgb(77, 161, 114);
+    width: 100%;
+    height: 100%;
 }
 a{
     text-decoration: none;
 }
 footer{
-    padding-top: 5px;
+    padding-top: 50px;
     margin: auto;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    height: 100%;
 }
 img{
     max-height: 140px;
@@ -40,7 +44,6 @@ img{
     margin-right: auto;
     font-size: 30px;
     display: block;
-    /* width: 100%; */
 }
 
 #riki{
@@ -109,10 +112,8 @@ table{
     border-radius: 10px;
 }
 div{
-    /* background-color: cornflowerblue; */
     margin: auto;
     text-align: center;
-    padding-top: 5px;
     padding-bottom: 5px;
 }
 #music:hover
