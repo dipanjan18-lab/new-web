@@ -13,6 +13,8 @@
 }
 body{
     background-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 header{
     margin: auto;
@@ -74,18 +76,29 @@ img{
 table{
     text-align: center;
     width: 1150px;
-    margin: auto;
 }
 #teampicture{
     border-radius: 50%;
+}
+
+table#bodys{
+    width: 100%;
+}
+
+table#team_table{
+    width: 100%;
 }
 #mytital{
     color: crimson;
     text-align: center;
     background-color: darkgray;
     border-radius: 50px;
+    border-width: 50%;
     margin-left: auto;
     margin-right: auto;
+    /* height: auto;
+    width: auto; */
+    max-width: 20%;
 }
 #myintro{
     color: aqua;
@@ -99,6 +112,8 @@ table{
     padding-bottom: 5px;
     padding-left: 25px;
     padding-right: 15px;
+    /* height: auto;
+    width: auto; */
 }
 #startend{
     color: coral;
@@ -122,6 +137,7 @@ div{
 #musictable{
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 #lefttd{
     text-align: right;
@@ -145,4 +161,19 @@ iframe{
     position: relative; 
     overflow: auto; 
     padding-top: 53.25%;
+}
+.copyright-div{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
 }
