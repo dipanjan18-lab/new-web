@@ -134,18 +134,20 @@ div{
     color: #ffc107;
     background: #000;
 }
+#musicdiv{
+    padding-top: 50px;
+}
 #musictable{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    text-align: center;
 }
 #lefttd{
-    text-align: right;
+    /* text-align: right; */
     font-size: 25px;
 }
-#righttd{
-    text-align: left;
-}
+
 iframe{
     position: absolute; 
     width: 100%;
