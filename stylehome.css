@@ -29,6 +29,18 @@ footer{
     margin: auto;
     background-color: rgb(26, 26, 26);
 }
+button{
+    background-color: cyan;
+    border: none;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 25px;
+    cursor: pointer;
+  }
 img{
     max-height: 140px;
     max-width: 140px;
@@ -68,6 +80,10 @@ img{
     color: chartreuse;
     text-align: center;
 }
+#teamtitle{
+    color: chartreuse;
+    text-align: left;
+}
 #teamname{
     text-align: center;
     color: cornflowerblue;
@@ -75,7 +91,7 @@ img{
 }
 table{
     text-align: center;
-    width: 1150px;
+    width: 100%;
 }
 #teampicture{
     border-radius: 50%;
@@ -96,15 +112,13 @@ table#team_table{
     border-width: 50%;
     margin-left: auto;
     margin-right: auto;
-    /* height: auto;
-    width: auto; */
     max-width: 20%;
 }
 #myintro{
-    color: aqua;
-    background-color: darkmagenta;
+    color:chartreuse;
+    background-color:darkslateblue;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: cursive;
     margin-left: 20px;
     margin-right: 20px;
@@ -112,15 +126,13 @@ table#team_table{
     padding-bottom: 5px;
     padding-left: 25px;
     padding-right: 15px;
-    /* height: auto;
-    width: auto; */
 }
 #startend{
     color: coral;
 }
 #biopic{
-    max-height: 800px;
-    max-width: 150px;
+    max-height: 70%;
+    max-width: 70%;
     border-radius: 10px;
 }
 div{
@@ -128,11 +140,55 @@ div{
     text-align: center;
     padding-bottom: 5px;
 }
-#music:hover
-{
-    /* cursor: pointer; */
-    color: #ffc107;
-    background: #000;
+#music{
+    background-color: #CA4246;
+    background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%
+    );
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  }
+  
+#music:hover{
+      animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+  }
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+#music {
+    font-family: "Archivo Black", sans-serif;
 }
 #musicdiv{
     padding-top: 50px;
