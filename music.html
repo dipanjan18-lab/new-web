@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Play List</title>
-        <meta charset="utf-8">
-        <style>
-            .column {
-            -moz-column-count: 2; /* For FireFox */
-            -webkit-column-count: 2; /* For Safari/Chrome */
-            column-count: 2; /* For when the standard gets fully supported */
-            }
-        </style>
-    </head>
-    <link rel="stylesheet" type="text/css" href="stylemusic.css">
-    <body>
-    <div class="column">
-        <ul>
-            <li>
-                <img src="https://raw.githubusercontent.com/dipanjan18-lab/web_images/main/Minimalist Square Photo Instagram Post.jpg">
-            </li>
-            <li>
-                <audio controls>
-                    <source src="https://raw.githubusercontent.com/dipanjan18-lab/web_musics/main/Ek%20Duje%20Ke%20Vaaste.mp3" type="audio/mpeg">
-                </audio>
-            </li>
-        </ul>
-        <br><br><br><br>
-        <ul>
-            <li>
-                <img src="https://raw.githubusercontent.com/dipanjan18-lab/web_images/main/Minimalist Square Photo Instagram Post (2).jpg">
-            </li>
-            <li>
-                <audio controls>
-                    <source src="https://raw.githubusercontent.com/dipanjan18-lab/web_musics/main/Ek%20Duje%20Ke%20Vaaste%202.mp3" type="audio/mpeg">
-                </audio>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="https://raw.githubusercontent.com/dipanjan18-lab/web_images/main/Minimalist Square Photo Instagram Post (1).jpg">
-            </li>
-            <li>
-                <audio controls>
-                    <source src="https://raw.githubusercontent.com/dipanjan18-lab/web_musics/main/Ek%20Duje%20Ke%20Vaaste%20SuVan.mp3" type="audio/mpeg">
-                </audio>
-            </li>
-        </ul>
-        <br><br><br><br>
-        <ul>
-            <li>
-                <img src="https://raw.githubusercontent.com/dipanjan18-lab/web_images/main/saawariya-song-aastha-gill-arjun-bijlani.jpg">
-            </li>
-            <li>
-                <audio controls>
-                    <source src="https://raw.githubusercontent.com/dipanjan18-lab/web_musics/main/Saawariya%20-%20Aastha%20Gill.mp3" type="audio/mpeg">
-                </audio>
-            </li>
-        </ul>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Music Player</title>
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="stylemusic.css">
+</head>
+<body>
+  <div class="player">
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
     </div>
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+      <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+
+  <!-- Load the main script for the player -->
+  <script src="musicjavascript.js"></script>
 </body>
 </html>
