@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Music Player</title>
+        <link rel="stylesheet" type="text/css" href="new.css">
+    </head>
+    <body>
+        <header>
+            <script type="text/javascript">
+                document.write("<center><font size=+3 style='color: green;'>");
+                const hr = new Date().getHours();
+                if (hr >= 0 && hr < 11) {
+                    document.write("Good Morning!");
+                } 
+                else if (hr >= 11 && hr <= 13) {
+                    document.write("Good Noon!");
+                } 
+                else if (hr >= 13 && hr <= 17) {
+                    document.write("Good Afternoon!");
+                } 
+                else {
+                    document.write("Good Evening!");
+                }
+                document.write("</font></left>");
+            </script>
+            <h1 class="wish" contenteditable spellcheck="false">Musical World</h1>
+        </header>
+        <div class="quotes1">
+            <div class="card">
+                <a href="hindi-music.html">
+                <div class="box box1">
+                    <p>Hindi Music</p>
+                </div>
+                <div class="bg"></div>
+                </a>
+            </div>
+            <div class="card">
+                <div class="box box2">
+                    <p>English Music</p>
+                </div>
+                <div class="bg"></div>
+            </div>
+        </div>
+        <div class="quotes2">
+            <div class="card">
+                <div class="box box3">
+                    <p>Bengali Music</p>
+                </div>
+                <div class="bg"></div>
+            </div>
+            <div class="card">
+                <div class="box box4">
+                    <p>Punjabi Music</p>
+                </div>
+                <div class="bg"></div>
+            </div>
+        </div>
+    </body>
+</html>

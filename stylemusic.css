@@ -1,0 +1,287 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* startHeader */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+  /* Base font size */
+  font-size: 10px;   
+  
+  /* Set neon color */
+  --neon-text-color: rgb(77, 45, 215);
+  --neon-border-color: rgb(157, 23, 139);
+}
+header{
+    background-color: black;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wish {
+  font-size: 45px;
+  font-weight: 200;
+  /* font-style: italic; */
+  color: blue;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid rgb(199, 37, 199);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.wish::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.wish::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.wish:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #5676ce,
+            0.2rem 0.2rem 1rem #5676ceff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+/*endHeader */
+
+.quotes1 {
+    width: 80vw;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 2;
+}
+  
+.quotes1 .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #645454;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+  
+.quotes1 .box::before {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+}
+  
+.quotes1 .box::after {
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
+}
+  
+.quotes1 .box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 43px;
+}
+  
+/* .quotes1 .box h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+} */
+  
+.quotes1 .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+  
+.quotes1 .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+
+.quotes2 {
+    width: 80vw;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 2;
+}
+  
+.quotes2 .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #645454;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+  
+.quotes2 .box::before {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+}
+  
+.quotes2 .box::after {
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
+}
+  
+.quotes2 .box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 43px;
+}
+  
+/* .quotes2 .box h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+} */
+  
+.quotes2 .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+  
+.quotes2 .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+  
+.quotes1 .box.box1:hover,
+.quotes1 .box.box1:hover~.bg {
+    opacity: 1;
+    background: #262059;
+    background: -moz-linear-gradient(-45deg, #262059 15%, #5a40c1 100%);
+    background: -webkit-linear-gradient(-45deg, #262059 15%,#5a40c1 100%);
+    background: linear-gradient(135deg, #262059 15%,#5a40c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+}
+  
+.quotes1 .box.box2:hover,
+.quotes1 .box.box2:hover~.bg {
+    opacity: 1;
+    background: #632c65;
+    background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
+    background: -webkit-linear-gradient(-45deg, #632c65 15%,#56a5e2 100%);
+    background: linear-gradient(135deg, #632c65 15%,#56a5e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+}
+  
+.quotes2 .box.box3:hover,
+.quotes2 .box.box3:hover~.bg {
+    opacity: 1;
+    background: #4b384c;
+    background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
+    background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%);
+    background: linear-gradient(135deg, #4b384c 15%,#da5de2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+}
+
+.quotes2 .box.box4:hover,
+.quotes2 .box.box4:hover~.bg {
+    opacity: 1;
+    background: #0fad71;
+    background: -moz-linear-gradient(-45deg, #0fad71 15%, #025849 100%);
+    background: -webkit-linear-gradient(-45deg, #0fad71 15%,#025849 100%);
+    background: linear-gradient(135deg, #0fad71 15%,#025849 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+}
