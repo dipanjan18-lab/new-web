@@ -3,26 +3,79 @@
     <head>
         <title>Simple Music Player</title>
         <link rel="stylesheet" type="text/css" href="stylemusic.css">
+        <link rel="stylesheet" type="text/css" href="styleflower_vase.css">
     </head>
     <body>
         <header>
-            <script type="text/javascript">
-                document.write("<center><font size=+3 style='color: green;'>");
-                const hr = new Date().getHours();
-                if (hr >= 0 && hr < 11) {
-                    document.write("Good Morning!");
-                } 
-                else if (hr >= 11 && hr <= 13) {
-                    document.write("Good Noon!");
-                } 
-                else if (hr >= 13 && hr <= 17) {
-                    document.write("Good Afternoon!");
-                } 
-                else {
-                    document.write("Good Evening!");
-                }
-                document.write("</font></left>");
-            </script>
+            <table>
+                <td>
+                    <script type="text/javascript">
+                        document.write("<center><font size=+3 style='color: green;'>");
+                        const hr = new Date().getHours();
+                        if (hr >= 0 && hr < 11) {
+                            document.write("Good Morning!");
+                        } 
+                        else if (hr >= 11 && hr <= 13) {
+                            document.write("Good Noon!");
+                        } 
+                        else if (hr >= 13 && hr <= 17) {
+                            document.write("Good Afternoon!");
+                        } 
+                        else {
+                            document.write("Good Evening!");
+                        }
+                        document.write("</font></left>");
+                    </script>
+                </td>
+                <td>
+                    <div class="vase">
+                        <div class="flower">
+                            <div class="f-wrapper">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+                                </div>
+                            </div>
+            
+                            <div class="f-wrapper f-wrapper--2">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
+                                </div>
+                            </div>
+            
+                            <div class="f-wrapper f-wrapper--3">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+                                </div>
+                            </div>
+                            <div class="flower__glass"></div>
+                        </div>
+                    </div>
+                </td>
+            </table>
             <h1 class="wish" contenteditable spellcheck="false"><b>Musical World</b></h1>
         </header>
         <div class="quotes1">
@@ -55,5 +108,17 @@
                 <div class="bg"></div>
             </div>
         </div>
+        <footer>
+            <hr>
+            </div>
+            <div class="copyright-div">
+                <a href="https://dipanjan18-lab.github.io/new-web/home.html">
+                    <p class="copyright">
+                        Site Powered By: RIKI Cyber Center © [2022] 
+                        FAB[Fabulous], All rights reserved
+                    </p>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
