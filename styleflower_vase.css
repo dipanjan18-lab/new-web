@@ -14,7 +14,7 @@
 
 .vase{
     background-image:var(--color-bg);
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items:flex-end;
