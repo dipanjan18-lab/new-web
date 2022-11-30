@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,6 +85,7 @@ header{
 }
 /*endHeader */
 
+/* start quotes1 */
 .quotes1 {
     width: 80vw;
     min-height: 400px;
@@ -100,13 +99,16 @@ header{
     position: relative;
     width: 300px;
     height: 300px;
-    background: #0f0028;
+    background: #0b0417;
     overflow: hidden;
     transition: all 0.5s ease-in;
     z-index: 2;
     box-sizing: border-box;
     padding: 30px;
-    box-shadow: -10px 25px 50px rgba(113, 62, 241, 0.3);
+    box-shadow: 3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3);
 }
   
 .quotes1 .box::before {
@@ -162,7 +164,9 @@ header{
     height: 200%;
     overflow: hidden;
 }
+/* end quotes1 */
 
+/* start quotes2 */
 .quotes2 {
     width: 80vw;
     min-height: 400px;
@@ -176,13 +180,16 @@ header{
     position: relative;
     width: 300px;
     height: 300px;
-    background: #0f0028;
+    background: #0b0417;
     overflow: hidden;
     transition: all 0.5s ease-in;
     z-index: 2;
     box-sizing: border-box;
     padding: 30px;
-    box-shadow: -10px 25px 50px rgba(113, 62, 241, 0.3);
+    box-shadow: 3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3);
 }
   
 .quotes2 .box::before {
@@ -238,46 +245,89 @@ header{
     height: 200%;
     overflow: hidden;
 }
-  
-.quotes1 .box.box1:hover,
-.quotes1 .box.box1:hover~.bg {
-    opacity: 0.5;
-    background: #262059;
-    background: -moz-linear-gradient(-45deg, #262059 15%, #5a40c1 100%);
-    background: -webkit-linear-gradient(-45deg, #262059 15%,#5a40c1 100%);
-    background: linear-gradient(135deg, #262059 15%,#5a40c1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+/* end quotoes2 */
+
+/* start quotes3 */
+.quotes3 {
+    width: 80vw;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 2;
 }
   
-.quotes1 .box.box2:hover,
-.quotes1 .box.box2:hover~.bg {
-    opacity: 0.5;
-    background: #632c65;
-    background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
-    background: -webkit-linear-gradient(-45deg, #632c65 15%,#56a5e2 100%);
-    background: linear-gradient(135deg, #632c65 15%,#56a5e2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
+.quotes3 .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #0b0417;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3),
+                3px 10px 50px rgba(113, 62, 241, 0.3);
 }
   
-.quotes2 .box.box3:hover,
-.quotes2 .box.box3:hover~.bg {
-    opacity: 0.5;
-    background: #4b384c;
-    background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
-    background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%);
-    background: linear-gradient(135deg, #4b384c 15%,#da5de2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+.quotes3 .box::before {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+}
+  
+.quotes3 .box::after {
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
 }
 
-.quotes2 .box.box4:hover,
-.quotes2 .box.box4:hover~.bg {
-    opacity: 0.5;
-    background: #0fad71;
-    background: -moz-linear-gradient(-45deg, #0fad71 15%, #025849 100%);
-    background: -webkit-linear-gradient(-45deg, #0fad71 15%,#025849 100%);
-    background: linear-gradient(135deg, #0fad71 15%,#025849 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
+.quotes3 .box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 43px;
+    color: gold;
 }
+.quotes3 .box p:hover {
+    margin: 0;
+    padding: 10px;
+    font-size: 43px;
+    color: white;
+}
+  
+.quotes3 .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+  
+.quotes3 .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+/* end quotes3 */
+
 
 footer{
     width: 100%;
@@ -308,4 +358,14 @@ table{
     padding-bottom: -50px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+ul{
+    color: gold;
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+    margin-top: -250px;
+    margin-left: 200px;
+    text-transform: uppercase;
 }
