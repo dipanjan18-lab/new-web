@@ -1,0 +1,67 @@
+.all{
+    background-color: red;
+    width: 150px;
+    height: 250px;
+    position: relative;
+}
+.inner-all{
+    width: 130px;
+    height: 230px;
+    position: absolute;
+    border-style: inset;
+    border-width: 4px;
+    border-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-style: inset;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, 30%);
+}
+
+.T-text{
+    text-align: center;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(1%, 1%);
+}
+.series-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 50px;
+}
+span {
+    display: inline-block;
+}
+.span1{
+    transform: translate(0px, -10px) rotate(10deg);
+}
+.span2{
+    transform: translate(0px, -3px) rotate(5deg);
+}
+.span3{
+    transform: translate(0px, 0px) rotate(2deg);
+}
+.span4{
+    transform: translate(0px, 0px) rotate(-2deg);
+}
+.span5{
+    transform: translate(0px, -3px) rotate(-5deg);
+}
+.span6{
+    transform: translate(0px, -10px) rotate(-10deg);
+}
