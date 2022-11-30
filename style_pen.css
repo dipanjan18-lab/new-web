@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+.pen{
+    background-color: rgb(3, 109, 110);
+    width: 150px;
+    height: 250px;
+    position: relative;
+}
+.all2{
+    background-color: rgb(3, 109, 110);
+    width: 130px;
+    height: 230px;
+    position: relative;
+    border-style: inset;
+    border-width: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.part1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.pen1_body{
+    height: 170px;
+    width: 20px;
+    background-color: green;
+    transform: rotate(-10deg);
+    border-bottom-style: outset;
+    border-top-style: outset;
+    border-color: black;
+    border-top-width: 2px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.pen2_body{
+    height: 170px;
+    width: 20px;
+    background-color: blue;
+    transform: rotate(10deg);
+    border-bottom-style: outset;
+    border-top-style: outset;
+    border-color: black;
+    border-top-width: 2px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.part2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pen1_head{
+    transform: translate(21px, -21px) rotate(-10deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-top: 35px solid rgb(236, 192, 131);
+    border-bottom: 35px solid black;
+    margin: 2rem;
+}
+.pen2_head{
+    transform: translate(-21px, -21px) rotate(10deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-top: 35px solid rgb(236, 192, 131);
+    border-bottom: 35px solid black;
+    margin: 2rem;
+}
