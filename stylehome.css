@@ -83,6 +83,7 @@ img{
 #teamtitle{
     color: chartreuse;
     text-align: left;
+    /* font-size: 5vw; */
 }
 #teamname{
     text-align: center;
@@ -116,10 +117,9 @@ table#team_table{
 }
 #myintro{
     color:chartreuse;
-    background-color:darkslateblue;
-    border-radius: 30px;
+    background-color:rgb(10, 2, 62);
     font-size: 15px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 5px;
@@ -131,7 +131,7 @@ table#team_table{
     color: coral;
 }
 #biopic{
-    max-height: 70%;
+    max-height: 50%;
     max-width: 70%;
     border-radius: 10px;
 }
@@ -160,7 +160,7 @@ div{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
-  }
+}
   
 #music:hover{
       animation: rainbow-text-simple-animation 0.5s ease-in forwards;
@@ -218,7 +218,8 @@ iframe{
     display: flex;
     position: relative; 
     overflow: auto; 
-    padding-top: 53.25%;
+    width: 70%;
+    padding-top: 39%;
 }
 .copyright-div{
     margin-top: 20px;
