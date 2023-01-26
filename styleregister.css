@@ -4,6 +4,7 @@ body{
     background: url('https://raw.githubusercontent.com/dipanjan18-lab/web_images/main/background_login_register.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
     background-position: cover;
 }
 
