@@ -1,0 +1,398 @@
+import pywhatkit # pip install flask
+from pywhatkit import exceptions  # pip install pywhatkit
+import pywikihow
+import datetime
+import webbrowser  # pip install PyQt5
+import webbrowser as web
+import os
+import shutil
+import time
+import requests
+from requests import get
+from bs4 import BeautifulSoup # pip install bs4
+from bs4 import BeautifulSoup as bs
+import wikipedia  # pip install wikipedia
+import wikipedia as googleScrap
+from pywikihow import search_wikihow  # pip install pywikihow
+import cv2  # pip install opencv-python
+import random
+import pyjokes  # pip install pyjokes
+import pyautogui  # pip install pyautogui
+import winsound
+import keyboard  # pip install keyboard
+import psutil  # pip install psutil
+import sys
+from time import sleep
+from playsound import playsound  # pip install playsound==1.2.2
+import subprocess as sp
+import pyfirmata  # pip install pyfirmata
+# pip install screen_brightness_control  for display brightness control
+import mainvoice
+from mainvoice import getProperty
+from mainvoice import setProperty
+from mainvoice import speak
+from mainvoice import takecommand 
+from mainvoice import wishMe
+import speech_recognition as sr  # pip install sr & pip install SpeechRecognition
+import pyttsx3  # pip install pyttsx3
+
+a = "2"
+th = int(time.strftime("%I"))
+tm = int(time.strftime("%M"))
+tap = time.strftime("%p")
+now = datetime.datetime.now()
+y = int(now.strftime("%y"))
+m = int(now.strftime("%m"))
+d = int(now.strftime("%d"))
+assname = ("Ricky")
+uname = ('Dipanjan')
+
+def usrname():
+    columns = shutil.get_terminal_size().columns
+    print("Welcome Mr.", uname.center(columns))
+     
+    speak("Please tall me how can I help you") 
+
+def introduce():
+    speak("Hey, I am pluto. I am created with Python Programming by Dipanjan Giri.")
+
+def check(input_str):
+    while True:
+        if input_str.strip().isdigit():
+            speak("Sir, I couldn'n understand what shoush i search, please tell me again")
+        else:
+            result = "https://www.youtube.com/results?search_query=" + input_str
+            webbrowser.open(f"{result}")
+            break
+
+def WebSearch(query):
+    # s = input('Enter the word to search in the file : ') 
+    s = query
+    fp = 'E://PLUTO//text//web_list.txt'
+    f = open(fp)
+    flag = 0 
+    
+    for line in f: 
+        line.strip().split('\n') 
+        if s in line: 
+            flag = 1 
+        break  
+    if flag == 0: 
+        print(f"Sorry {s} not found") 
+    else: 
+        print(f'{s} Found') 
+        speak(f"please wait, I am launching {query} in Google Chrome browser\n")
+        hi = webbrowser.open(f"https://www.{query}.com/")  
+        print(hi) 
+    f.close()
+
+def TaskExecution():    
+    while True:
+        query = takecommand().lower()  
+        # query = ("news")
+        battery = psutil.sensors_battery()
+        percentage = battery.percent
+        # TH = ("0")
+        # TM = ("0")
+        
+        if 'open' in query:
+            query = query.replace("open ","")
+            WebSearch(query)       
+
+        elif 'do you know' in query:
+            speak('Searching Wikipedia...')
+            # query = query.replace("do you know","")
+            query = query.replace("do you know","")
+            # query = query.replace("search in","")
+            result = wikipedia.summary(query,2)
+            speak("According to Wikipedia")
+            print(result)
+            speak(result)
+
+        elif 'notepad' in query:
+            if 'open notepad' in query:
+                speak("Here is your Notepad Sir.\n")
+                npath = "C:\\Windows\\System32\\notepad.exe"
+                os.startfile(npath) 
+
+            elif "close notepad" in query:
+                speak("Okay sir, closing notepad")
+                os.system("taskkill /f /im notepad.exe")    
+        
+        elif "thanks" in query or "thank you" in query:
+            wishes = ["welcome sir","you’re welcome sir","most welcome sir"]
+            random_num = random.choice(wishes)
+            speak(random_num)
+
+        elif 'screen recorder' in query:
+            if 'open screen recorder' in query:
+                speak("Here in you OBS studio Sir.\n")
+                mpath = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\OBS Studio\\OBS Studio (64bit).lnk"
+                os.startfile(mpath)  
+
+            elif "close o b s" in query:
+                speak("Okay sir, closing OBS Studio")
+                os.system("taskkill /f /im OBS Studio (64bit).lnk")       
+
+        elif 'open command prompt' in query or 'open cmd' in query:
+            speak("Here is your Command Prompt Sir\n")
+            os.system("start cmd")
+
+        elif "shutdown the system" in query:  
+            speak("Are you sure to shutdown the system")
+            query = takecommand().lower() 
+            if 'yes' in query:
+                os.system("shutdown /s /t 5")
+            elif 'no' in query:
+                speak("ok sir!")
+                break
+            else:
+                break        
+
+        elif "restart down the system" in query:
+            os.system("shutdown /r /t 5")
+
+        elif "sleep the system" in query:
+            os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+
+        elif "how are you" in query:
+            speak("I am fine, what about you ?")
+
+        elif "will you marry me" in query:
+            speak("Sorry I am not prepare for that")        
+
+        elif "play music" in query or "play something else" in query or "play next" in query:  
+            os.system("taskkill /f /im my music")   
+            speak("okay sir...")
+            os.system("taskkill/im PotplayerMini64.exe") 
+            music_dir = "E:\\PLUTO\\New\\my music"
+            songs = os.listdir(music_dir)
+            rd = random.choice(songs)
+            os.startfile(os.path.join(music_dir, rd)) 
+           
+        elif "search on youtube" in query: 
+            speak("Sir, what should I search on YouTube")
+            check_str = takecommand()
+            check(check_str)
+
+        elif 'zee bangla' in query:
+            speak("Here you to ZeeBangla\n")   
+            webbrowser.open("https://www.zee5.com/")
+
+        elif 'whatsapp' in query:
+            speak("Here you to Whatsapp\n")   
+            webbrowser.open("https://web.whatsapp.com/")
+
+        elif 'search on google'in query or'can you help me' in query or 'help me' in query:
+            speak("sir, What should i search on Google")
+            cm = takecommand().lower()  
+            speak("sir, Here your reasult")
+            webbrowser.open(f"https://www.google.com/search?q={cm}")
+
+        elif 'what is' in query:
+            if "what is my current location" in query:
+                speak("Wait sir, let me check")  
+                from WeatherNow import location
+                location() 
+
+            elif "what is current time" in query:
+                localtime = (f"{th}:{tm} {tap}")
+                print(localtime)
+                speak("It is")
+                speak(localtime)
+
+            elif "what is your name" in query:
+                speak("Hello, I am PLUTO, an artificial intelligence designed to assist and enhance your experience with unparalleled knowledge and capabilities.")
+
+            else:    
+                speak("please wait sir.")
+                pywhatkit.search(query)
+                try:
+                    result = googleScrap.summary(query,2)
+                    speak(result)
+                except:
+                    speak("Sorry sir, No data found")    
+
+        elif 'make my mood' in query:
+            speak("Please wait, let me prepare...")  
+            music_dir = "E:\\PLUTO\\New\\mood"
+            songs = os.listdir(music_dir)
+            rd = random.choice(songs)
+            os.startfile(os.path.join(music_dir, rd))
+        elif 'play my favourite track' in query or 'play my favourite' in query:
+            speak("okay")  
+            playsound('E://PLUTO/New/feb/Ek Duje.mp3')
+        elif 'stop music' in query:   
+            speak("Okay sir")
+            os.system("taskkill/im PotplayerMini64.exe")  
+            speak("closing music system succesfully")
+
+        elif 'studio' in query:
+            speak("Are you want to see YouTube channel situation. Please wait...")
+            webbrowser.open("https://studio.youtube.com/channel/")
+
+        elif 'dipanjan' in query or 'antu' in query or '12' in query:
+            speak("Are you talkink about my sir !") 
+
+        elif "who made you" in query or "who created you" in query or 'who are you' in query or 'introduce yourself'in query:
+            introduce()
+           
+        elif "what's your name" in query or "what is your name" in query:
+            speak("My friends call me")
+            speak(assname)
+
+        elif 'where are you from' in query:
+            speak("I am from kolkata, India")    
+
+        elif "change name" in query or "want to change your name" in query:
+            speak("Which name would you like to call me, Sir ")
+            assname = takecommand()
+            speak("Thanks for naming me") 
+
+        elif 'hi pluto' in query or 'hay pluto' in query or 'hello pluto' in query or 'pluto' in query :
+            speak("Hi sir. Is that any problem ? please tall me.")     
+
+        elif "change my name" in query:
+            speak("Which name would you like")
+            uname = takecommand()
+            speak("Thanks for changing your name") 
+
+        elif "what is my name" in query:
+            speak("sir you name is")
+            speak(uname)
+
+        elif "current time" in query or "what time right now" in query:
+            localtime = (f"{th}:{tm} {tap}")
+            print(localtime)
+            speak("It is"+localtime)
+
+        elif "today date" in query or "date" in query:
+            today = datetime.now()
+            currdate = today.strftime("%b")
+            print(currdate)
+            speak("It is"+currdate)
+
+        elif "today weather" in query:
+            speak('please wait sir, i am taking information')
+            from WeatherNow import get_weather_data
+            from WeatherNow import weather
+            weather()
+
+        elif "my ip" in query or "my current ip" in query:
+            speak("Wait sir, let me check")    
+            ip = get('https://api.ipify.org').text
+            print(ip)
+            speak(f"Your current IP address is {ip} , this is your public ip address")
+
+        elif "where i am" in query or "what is my current location" in query:
+            speak("Wait sir, let me check")  
+            location() 
+
+        elif 'take screenshot' in query or 'take a screenshot' in query:
+            speak("Please hold the screen for few second, I am taking screenshot")
+            time.sleep(3)
+            img = pyautogui.screenshot()
+            speak("Sir , Please tell me the name of this screenshot file")
+            name = takecommand().lower()
+            img.save(f"E:\\PLUTO\\Screenshot\\{name}.png")
+            speak("Sir, it's done successfully. The screenshot is saved in our Screenshot folder") 
+            
+        elif "battery" in query or 'how many power' in query:
+            speak(f"Sir our system have {percentage} percent battery")
+            if percentage>=75:
+                speak("Sir we have enouth power to continue our work")
+            elif percentage>=40 and percentage<=75:
+                speak("Sir we can work on the battery we have")
+            elif percentage>=15 and percentage<=40:
+                speak("Sir, We don't have enougn power to work. Please connect to charging")
+            elif percentage<=15:
+                speak("Sir we have very low power. Please connect to charging otherwise the system will shutdown very soon")        
+
+        elif 'ms office' in query or 'microsoft office' in query:
+            speak("Here you to Microsoft Office\n")   
+            webbrowser.open("https://www.office.com/")   
+                          
+        elif "volume up" in query or "increse the volume" in query:
+            pyautogui.press("volumeup")
+
+        elif "volume down" in query or "decrese the volume" in query:
+            pyautogui.press('volumedown')
+
+        elif "volume mute" in query or "mute the system" in query or "mute" in query:
+            pyautogui.press("volumemute")   
+
+        elif "volume unmute" in query or "unmute the system" in query or "unmute" in query:
+            pyautogui.press("volumeunmute")           
+
+        elif 'send sms' in query or 'send a sms' in query or 'send a whatsapp sms' in query or 'send the sms' in query:
+            from sms_sender import name_check
+            name_check(query)
+
+        elif 'create new contact' in query or 'create contact' in query:
+            from my_contacts import new_contact
+            speak("Pleae enter the data in dialog box manully.")
+            playsound('E://PLUTO/New/notification/alart2.mp3')
+            new_contact()
+            # playsound('E://PLUTO/New/notification/alart1.mp3')
+
+        elif 'tell me a joke' in query:
+            joke = pyjokes.get_joke()
+            speak(joke)                                                            
+
+        elif "what day of the week" in query:
+            day = (datetime.date(int(y),int(m),int(d)).strftime("%A"))
+            speak('Sir, toady is' f"{day}")
+
+        elif "you may go now" in query or "you can sleep" in query:
+            speak("Sir i am going to take some rest, but you can call me any time")
+            break
+
+        elif "search a file" in query:
+            listing = os.walk('C:/')
+            speak("Enter the file name")
+            search_input = input("Enter file name : ")
+            for root_path, directorioes, files in listing:
+                if search_input in files:
+                    speak(os.path.join(root_path, search_input))
+
+        elif "today news" in query:
+            import news
+            from news import todaynews    
+            todaynews()
+            speak("Sir That's all for today")  
+
+        elif "change brightness" in query or "change display brightness" in query:
+            from displaybrightness import brightness
+            brightness()
+
+        elif "current brightness" in query or "display brightness" in query:
+            import screen_brightness_control as sbc
+            current_brightness = sbc.get_brightness()
+            speak(f"Sir current brightness is {current_brightness} % of your system")  
+            speak("Do you want to change the display brightness? ")
+            query = takecommand().lower()
+            if "yes" in query:
+                from displaybrightness import brightness
+                brightness()
+            elif "no" in query:
+                speak("ok sir.")
+            else:
+                speak("I hope you don't want to change the display brightness, because you tell me nothing")        
+
+        elif "can you make" in query:
+            from processing import food
+            food(query)
+
+        elif "how to make" in query:
+            from processing import making
+            making(query)
+
+        else:
+            continue             
+
+if __name__ == "__main__":   
+    from package_installation import main
+    main()
+    # wishMe()
+    # intro()
+    TaskExecution()
