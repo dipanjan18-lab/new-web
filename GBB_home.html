@@ -4,6 +4,7 @@
     <title>GBB</title>
     <link rel="stylesheet" type="text/css" href="GBB_home_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="front_slideshow.css">
     <script src="script_files/GBB_home_script.js" defer></script>
 </head>
 <body>
@@ -11,11 +12,7 @@
         <div class="logo">
             <img src="https://raw.githubusercontent.com/dipanjan18-lab/new-web/main/cropped-NEWW-logo-300x184.jpg" alt="Shop Logo">
         </div>
-        <form class="skewed-search">
-            <input type="text" placeholder="Search...">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        
+
         <ul class="menu cf">
             <li>
                 <a href="">PRODUCTS</a>
@@ -26,14 +23,33 @@
                     <li><a href="">PAINT</a></li>
                 </ul>			
             </li>
+        </ul>
+
+        <form class="skewed-search">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        
+        <ul class="menu cf">
             <li><a href="">Menu item</a></li>
             <li><a href="">LOGIN</a></li>
         </ul>
     </header>    
-    <footer>
-        <div class="footer-content">
-            &copy; 2023 GharBariBazar. All rights reserved.
-        </div>
-    </footer>
+
+    <div id="image-container">
+        <img class="image" src="https://raw.githubusercontent.com/dipanjan18-lab/new-web/main/front_image1.JPG" alt="Image 1">
+        <img class="image" src="https://raw.githubusercontent.com/dipanjan18-lab/new-web/main/front_image2.JPG" alt="Image 2">
+        <img class="image" src="https://raw.githubusercontent.com/dipanjan18-lab/new-web/main/front_image3.JPG" alt="Image 3">
+        <img class="image" src="https://raw.githubusercontent.com/dipanjan18-lab/new-web/main/front_image4.JPG" alt="Image 4">
+        <img class="image" src="https://raw.githubusercontent.com/dipanjan18-lab/new-web/main/front_image5.jpg" alt="Image 5">
+
+        <div class="arrow arrow-left" onclick="changeImage(-1)">&#10094;</div>
+        <div class="arrow arrow-right" onclick="changeImage(1)">&#10095;</div>
+    </div>
+    <div class="overlay">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div> 
+    </div>
 </body>
 </html>
