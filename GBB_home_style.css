@@ -10,12 +10,11 @@ header {
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px 0;
     position: relative;
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 120px;
     margin-left: 40px;
 }
 
@@ -64,6 +63,7 @@ form.skewed-search button:hover {
 }
 
 /* Clearing floats */
+/* Clearing floats */
 .cf:before,
 .cf:after {
   content: " ";
@@ -80,10 +80,11 @@ form.skewed-search button:hover {
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 2;
 }
 
 /* Main level */
-.menu {			
+.menu {		
   margin: 50px auto;
   width: 800px;
   width: -moz-fit-content;
@@ -128,7 +129,7 @@ form.skewed-search button:hover {
 .submenu li {
   background-color: #34495e;
   position: relative;
-  overflow: hidden;		
+  overflow: hidden;	
 }						
 
 .submenu > li > a {
@@ -197,21 +198,3 @@ form.skewed-search button:hover {
   transform: skewX(-25deg) translateX(-15px);			
 }
 
-
-
-
-
-/* Add footer CSS */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-content {
-    font-size: 14px;
-}
