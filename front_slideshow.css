@@ -85,6 +85,18 @@
     background: url('https://assets.codepen.io/48941/photo-1647099450706-bddaf1219994.avif');
 }
 
+.card:nth-of-type(4) {
+    background: url('https://assets.codepen.io/48941/photo-1647099450706-bddaf1219994.avif');
+}
+
+.card:nth-of-type(5) {
+    background: url('https://assets.codepen.io/48941/photo-1560015534-cee980ba7e13.avif');
+}
+
+.card:nth-of-type(6) {
+    background: url('https://assets.codepen.io/48941/photo-1627208550904-7abe585132d4.avif');
+}
+
 /* Media query for mobile */
 @media (max-width: 768px) {
     .card {
